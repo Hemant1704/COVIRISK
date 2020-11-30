@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1> COVID-19 DEATH RISK PREDICTION</h1>
+    <form action='/predict' method="post" class="col s12">
+        <label ><b>Gender </b></label>
+        <input type = "text" name = "gender"><br><br>
+        <label ><b>Is patient suffering from pneumonia </b></label>
+        <input type = "text" name = "pneu"><br><br>
+        <label ><b> Age of the patient </b></label>
+        <input type = "text" name = "age"><br><br>
+        <label ><b> Is patient pregnant</b></label>
+        <input type = "text" name = "preg"><br><br>
+        <label ><b>Is patient suffering from asthma</b></label>
+        <input type = "text" name = "asth"><br><br>
+        <label ><b>Does patient has cardiovascular problem</b></label>
+        <input type = "text" name = "card"><br><br>
+        <label ><b>Does he/she has obesity</b></label>
+        <input type = "text" name = "obs"><br><br>
+        <label ><b>Is the patient admitted in icu</b></label>
+        <input type = "text" name = "icu"><br><br>
+
+  
+        <button type="submit">Predict Probability</button>
+      </form>
+      <br>
+      {{pred}}
+    <br>
+</body>
+</html>
