@@ -34,10 +34,7 @@ def predict():
         print(final)
         output=model.predict(final)[0]
         return render_template('homepage.html',pred='Your Forest is in Danger.\nProbability of fire occuring is {}'.format(output))
-#@app.route("/<usr>")
-#def user(usr):
- 
- #return f"<h1>{usr}</h1>"
+
    
     
 
